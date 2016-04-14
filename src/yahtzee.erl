@@ -6,8 +6,8 @@
 
 -export([ones/1]).
 
-ones(_Roll) ->
-    0.
+ones(Roll) ->
+    lists:sum(lists:filter(fun(Die) -> Die == 1 end,Roll)).
 
 -ifdef(EUNIT).
 
