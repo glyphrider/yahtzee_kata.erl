@@ -1,0 +1,14 @@
+%%% -*- mode: erlang -*-
+%%% ex: ft=erlang:
+{application, yahtzee,
+ [
+  {description, "Yahtzee Scoring"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  %% {mod, { yahtzee_app, []}},
+  {env, []}
+ ]}.
